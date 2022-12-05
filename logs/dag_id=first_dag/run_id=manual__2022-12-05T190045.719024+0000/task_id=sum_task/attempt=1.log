@@ -1,0 +1,26 @@
+[2022-12-05T19:00:47.385+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: first_dag.sum_task manual__2022-12-05T19:00:45.719024+00:00 [queued]>
+[2022-12-05T19:00:47.398+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: first_dag.sum_task manual__2022-12-05T19:00:45.719024+00:00 [queued]>
+[2022-12-05T19:00:47.399+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-05T19:00:47.399+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-05T19:00:47.400+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-05T19:00:47.424+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): sum_task> on 2022-12-05 19:00:45.719024+00:00
+[2022-12-05T19:00:47.431+0000] {standard_task_runner.py:55} INFO - Started process 9887 to run task
+[2022-12-05T19:00:47.436+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'sum_task', 'manual__2022-12-05T19:00:45.719024+00:00', '--job-id', '1260', '--raw', '--subdir', 'DAGS_FOLDER/***1t.py', '--cfg-path', '/tmp/tmpgnd33pyf']
+[2022-12-05T19:00:47.438+0000] {standard_task_runner.py:83} INFO - Job 1260: Subtask sum_task
+[2022-12-05T19:00:47.531+0000] {task_command.py:376} INFO - Running <TaskInstance: first_dag.sum_task manual__2022-12-05T19:00:45.719024+00:00 [running]> on host debdf09646d4
+[2022-12-05T19:00:47.599+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=sum_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-05T19:00:45.719024+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-05T19:00:45.719024+00:00
+[2022-12-05T19:00:47.600+0000] {logging_mixin.py:137} INFO - 89
+[2022-12-05T19:00:47.600+0000] {logging_mixin.py:137} INFO - 10057
+[2022-12-05T19:00:47.601+0000] {logging_mixin.py:137} INFO - 10057
+[2022-12-05T19:00:47.602+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-05T19:00:47.611+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=first_dag, task_id=sum_task, execution_date=20221205T190045, start_date=20221205T190047, end_date=20221205T190047
+[2022-12-05T19:00:47.646+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-05T19:00:47.662+0000] {taskinstance.py:2623} INFO - 0 downstream tasks scheduled from follow-on schedule check

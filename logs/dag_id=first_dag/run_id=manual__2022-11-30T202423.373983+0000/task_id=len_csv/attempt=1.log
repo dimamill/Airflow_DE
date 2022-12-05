@@ -1,0 +1,34 @@
+[2022-11-30T20:24:24.723+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: first_dag.len_csv manual__2022-11-30T20:24:23.373983+00:00 [queued]>
+[2022-11-30T20:24:24.732+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: first_dag.len_csv manual__2022-11-30T20:24:23.373983+00:00 [queued]>
+[2022-11-30T20:24:24.733+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-30T20:24:24.733+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-30T20:24:24.734+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-30T20:24:24.749+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): len_csv> on 2022-11-30 20:24:23.373983+00:00
+[2022-11-30T20:24:24.757+0000] {standard_task_runner.py:55} INFO - Started process 11685 to run task
+[2022-11-30T20:24:24.761+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'len_csv', 'manual__2022-11-30T20:24:23.373983+00:00', '--job-id', '794', '--raw', '--subdir', 'DAGS_FOLDER/***1t.py', '--cfg-path', '/tmp/tmpe9xy4r_2']
+[2022-11-30T20:24:24.763+0000] {standard_task_runner.py:83} INFO - Job 794: Subtask len_csv
+[2022-11-30T20:24:24.827+0000] {task_command.py:376} INFO - Running <TaskInstance: first_dag.len_csv manual__2022-11-30T20:24:23.373983+00:00 [running]> on host debdf09646d4
+[2022-11-30T20:24:24.895+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=len_csv
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-30T20:24:23.373983+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-30T20:24:23.373983+00:00
+[2022-11-30T20:24:24.897+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-30T20:24:24.898+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'len_csv_file']
+[2022-11-30T20:24:24.906+0000] {subprocess.py:86} INFO - Output:
+[2022-11-30T20:24:24.907+0000] {subprocess.py:93} INFO - /bin/bash: line 1: len_csv_file: command not found
+[2022-11-30T20:24:24.908+0000] {subprocess.py:97} INFO - Command exited with return code 127
+[2022-11-30T20:24:24.917+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 197, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 127.
+[2022-11-30T20:24:24.921+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=first_dag, task_id=len_csv, execution_date=20221130T202423, start_date=20221130T202424, end_date=20221130T202424
+[2022-11-30T20:24:24.935+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 794 for task len_csv (Bash command failed. The command returned a non-zero exit code 127.; 11685)
+[2022-11-30T20:24:24.973+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2022-11-30T20:24:24.989+0000] {taskinstance.py:2623} INFO - 0 downstream tasks scheduled from follow-on schedule check

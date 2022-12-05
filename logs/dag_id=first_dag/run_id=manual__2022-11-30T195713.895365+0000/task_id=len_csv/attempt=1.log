@@ -1,0 +1,24 @@
+[2022-11-30T19:57:18.936+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: first_dag.len_csv manual__2022-11-30T19:57:13.895365+00:00 [queued]>
+[2022-11-30T19:57:18.946+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: first_dag.len_csv manual__2022-11-30T19:57:13.895365+00:00 [queued]>
+[2022-11-30T19:57:18.947+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-30T19:57:18.947+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-30T19:57:18.948+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-30T19:57:18.963+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): len_csv> on 2022-11-30 19:57:13.895365+00:00
+[2022-11-30T19:57:18.968+0000] {standard_task_runner.py:55} INFO - Started process 10306 to run task
+[2022-11-30T19:57:18.971+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'len_csv', 'manual__2022-11-30T19:57:13.895365+00:00', '--job-id', '771', '--raw', '--subdir', 'DAGS_FOLDER/***1t.py', '--cfg-path', '/tmp/tmpxlftffzc']
+[2022-11-30T19:57:18.973+0000] {standard_task_runner.py:83} INFO - Job 771: Subtask len_csv
+[2022-11-30T19:57:19.033+0000] {task_command.py:376} INFO - Running <TaskInstance: first_dag.len_csv manual__2022-11-30T19:57:13.895365+00:00 [running]> on host debdf09646d4
+[2022-11-30T19:57:19.102+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=len_csv
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-30T19:57:13.895365+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-30T19:57:13.895365+00:00
+[2022-11-30T19:57:21.578+0000] {logging_mixin.py:137} INFO - 23
+[2022-11-30T19:57:21.578+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-11-30T19:57:21.587+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=first_dag, task_id=len_csv, execution_date=20221130T195713, start_date=20221130T195718, end_date=20221130T195721
+[2022-11-30T19:57:21.633+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-11-30T19:57:21.649+0000] {taskinstance.py:2623} INFO - 0 downstream tasks scheduled from follow-on schedule check

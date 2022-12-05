@@ -1,0 +1,32 @@
+[2022-12-05T18:28:59.736+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: first_dag.sum_task manual__2022-12-05T18:28:58.709382+00:00 [queued]>
+[2022-12-05T18:28:59.747+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: first_dag.sum_task manual__2022-12-05T18:28:58.709382+00:00 [queued]>
+[2022-12-05T18:28:59.748+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-05T18:28:59.749+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-05T18:28:59.749+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-05T18:28:59.766+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): sum_task> on 2022-12-05 18:28:58.709382+00:00
+[2022-12-05T18:28:59.772+0000] {standard_task_runner.py:55} INFO - Started process 8109 to run task
+[2022-12-05T18:28:59.778+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'sum_task', 'manual__2022-12-05T18:28:58.709382+00:00', '--job-id', '1169', '--raw', '--subdir', 'DAGS_FOLDER/***1t.py', '--cfg-path', '/tmp/tmpe757ohi3']
+[2022-12-05T18:28:59.780+0000] {standard_task_runner.py:83} INFO - Job 1169: Subtask sum_task
+[2022-12-05T18:28:59.851+0000] {task_command.py:376} INFO - Running <TaskInstance: first_dag.sum_task manual__2022-12-05T18:28:58.709382+00:00 [running]> on host debdf09646d4
+[2022-12-05T18:28:59.925+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=sum_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-05T18:28:58.709382+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-05T18:28:58.709382+00:00
+[2022-12-05T18:28:59.926+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 193, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/airflow1t.py", line 49, in summa
+    result2 = [[int(n)] for n in f.read().split(' ')[1]]
+IndexError: list index out of range
+[2022-12-05T18:28:59.937+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=first_dag, task_id=sum_task, execution_date=20221205T182858, start_date=20221205T182859, end_date=20221205T182859
+[2022-12-05T18:28:59.950+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 1169 for task sum_task (list index out of range; 8109)
+[2022-12-05T18:28:59.989+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2022-12-05T18:29:00.007+0000] {taskinstance.py:2623} INFO - 0 downstream tasks scheduled from follow-on schedule check

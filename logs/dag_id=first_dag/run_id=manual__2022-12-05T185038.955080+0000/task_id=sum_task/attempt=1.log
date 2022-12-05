@@ -1,0 +1,33 @@
+[2022-12-05T18:50:40.334+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: first_dag.sum_task manual__2022-12-05T18:50:38.955080+00:00 [queued]>
+[2022-12-05T18:50:40.348+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: first_dag.sum_task manual__2022-12-05T18:50:38.955080+00:00 [queued]>
+[2022-12-05T18:50:40.348+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-05T18:50:40.349+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-05T18:50:40.349+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-05T18:50:40.376+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): sum_task> on 2022-12-05 18:50:38.955080+00:00
+[2022-12-05T18:50:40.382+0000] {standard_task_runner.py:55} INFO - Started process 9343 to run task
+[2022-12-05T18:50:40.387+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'sum_task', 'manual__2022-12-05T18:50:38.955080+00:00', '--job-id', '1239', '--raw', '--subdir', 'DAGS_FOLDER/***1t.py', '--cfg-path', '/tmp/tmpicp4kq4e']
+[2022-12-05T18:50:40.390+0000] {standard_task_runner.py:83} INFO - Job 1239: Subtask sum_task
+[2022-12-05T18:50:40.467+0000] {task_command.py:376} INFO - Running <TaskInstance: first_dag.sum_task manual__2022-12-05T18:50:38.955080+00:00 [running]> on host debdf09646d4
+[2022-12-05T18:50:40.558+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=sum_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-05T18:50:38.955080+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-05T18:50:38.955080+00:00
+[2022-12-05T18:50:40.560+0000] {logging_mixin.py:137} INFO - [[89], [10057], [6532], [10797], [330], [12124], [3116], [5071], [49113], [10614], [8844], [9859], [7891], [10104], [64106], [8216], [3611], [1113], [11576], [1224], [9977], [9729], [9109], [122]]
+[2022-12-05T18:50:40.560+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 193, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/airflow1t.py", line 53, in summa
+    print(sum(result1))
+TypeError: unsupported operand type(s) for +: 'int' and 'list'
+[2022-12-05T18:50:40.571+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=first_dag, task_id=sum_task, execution_date=20221205T185038, start_date=20221205T185040, end_date=20221205T185040
+[2022-12-05T18:50:40.584+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 1239 for task sum_task (unsupported operand type(s) for +: 'int' and 'list'; 9343)
+[2022-12-05T18:50:40.598+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2022-12-05T18:50:40.621+0000] {taskinstance.py:2623} INFO - 0 downstream tasks scheduled from follow-on schedule check

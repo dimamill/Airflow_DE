@@ -1,0 +1,25 @@
+[2022-12-05T19:23:01.161+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: first_dag.number_task scheduled__2022-12-05T06:10:00+00:00 [queued]>
+[2022-12-05T19:23:01.181+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: first_dag.number_task scheduled__2022-12-05T06:10:00+00:00 [queued]>
+[2022-12-05T19:23:01.182+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-05T19:23:01.183+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-05T19:23:01.184+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-05T19:23:01.377+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): number_task> on 2022-12-05 06:10:00+00:00
+[2022-12-05T19:23:01.387+0000] {standard_task_runner.py:55} INFO - Started process 12873 to run task
+[2022-12-05T19:23:01.397+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'number_task', 'scheduled__2022-12-05T06:10:00+00:00', '--job-id', '1879', '--raw', '--subdir', 'DAGS_FOLDER/***1t.py', '--cfg-path', '/tmp/tmp836oeqy_']
+[2022-12-05T19:23:01.403+0000] {standard_task_runner.py:83} INFO - Job 1879: Subtask number_task
+[2022-12-05T19:23:01.570+0000] {task_command.py:376} INFO - Running <TaskInstance: first_dag.number_task scheduled__2022-12-05T06:10:00+00:00 [running]> on host debdf09646d4
+[2022-12-05T19:23:01.729+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=number_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-05T06:10:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-05T06:10:00+00:00
+[2022-12-05T19:23:01.732+0000] {logging_mixin.py:137} INFO - 25   78
+[2022-12-05T19:23:01.733+0000] {logging_mixin.py:137} INFO - <_io.TextIOWrapper name='file.txt' mode='a' encoding='UTF-8'>
+[2022-12-05T19:23:01.735+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-05T19:23:01.759+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=first_dag, task_id=number_task, execution_date=20221205T061000, start_date=20221205T192301, end_date=20221205T192301
+[2022-12-05T19:23:01.852+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-05T19:23:01.892+0000] {taskinstance.py:2623} INFO - 1 downstream tasks scheduled from follow-on schedule check

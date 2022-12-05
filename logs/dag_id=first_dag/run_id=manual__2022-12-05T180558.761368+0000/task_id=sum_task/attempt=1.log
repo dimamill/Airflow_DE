@@ -1,0 +1,32 @@
+[2022-12-05T18:06:12.517+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: first_dag.sum_task manual__2022-12-05T18:05:58.761368+00:00 [queued]>
+[2022-12-05T18:06:12.527+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: first_dag.sum_task manual__2022-12-05T18:05:58.761368+00:00 [queued]>
+[2022-12-05T18:06:12.527+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-05T18:06:12.528+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-05T18:06:12.528+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-05T18:06:12.543+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): sum_task> on 2022-12-05 18:05:58.761368+00:00
+[2022-12-05T18:06:12.548+0000] {standard_task_runner.py:55} INFO - Started process 6838 to run task
+[2022-12-05T18:06:12.551+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'sum_task', 'manual__2022-12-05T18:05:58.761368+00:00', '--job-id', '1112', '--raw', '--subdir', 'DAGS_FOLDER/***1t.py', '--cfg-path', '/tmp/tmpb5gjpcts']
+[2022-12-05T18:06:12.553+0000] {standard_task_runner.py:83} INFO - Job 1112: Subtask sum_task
+[2022-12-05T18:06:12.615+0000] {task_command.py:376} INFO - Running <TaskInstance: first_dag.sum_task manual__2022-12-05T18:05:58.761368+00:00 [running]> on host debdf09646d4
+[2022-12-05T18:06:12.679+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=sum_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-05T18:05:58.761368+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-05T18:05:58.761368+00:00
+[2022-12-05T18:06:12.680+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 193, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/airflow1t.py", line 47, in summa
+    lines1 = file.readlines()
+io.UnsupportedOperation: not readable
+[2022-12-05T18:06:12.689+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=first_dag, task_id=sum_task, execution_date=20221205T180558, start_date=20221205T180612, end_date=20221205T180612
+[2022-12-05T18:06:12.700+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 1112 for task sum_task (not readable; 6838)
+[2022-12-05T18:06:12.724+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2022-12-05T18:06:12.739+0000] {taskinstance.py:2623} INFO - 0 downstream tasks scheduled from follow-on schedule check

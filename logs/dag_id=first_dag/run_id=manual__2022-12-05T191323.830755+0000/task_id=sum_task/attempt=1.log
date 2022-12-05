@@ -1,0 +1,32 @@
+[2022-12-05T19:13:25.014+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: first_dag.sum_task manual__2022-12-05T19:13:23.830755+00:00 [queued]>
+[2022-12-05T19:13:25.024+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: first_dag.sum_task manual__2022-12-05T19:13:23.830755+00:00 [queued]>
+[2022-12-05T19:13:25.025+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-05T19:13:25.026+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-05T19:13:25.026+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-05T19:13:25.045+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): sum_task> on 2022-12-05 19:13:23.830755+00:00
+[2022-12-05T19:13:25.050+0000] {standard_task_runner.py:55} INFO - Started process 10634 to run task
+[2022-12-05T19:13:25.054+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'sum_task', 'manual__2022-12-05T19:13:23.830755+00:00', '--job-id', '1309', '--raw', '--subdir', 'DAGS_FOLDER/***1t.py', '--cfg-path', '/tmp/tmp5ib27uwv']
+[2022-12-05T19:13:25.056+0000] {standard_task_runner.py:83} INFO - Job 1309: Subtask sum_task
+[2022-12-05T19:13:25.122+0000] {task_command.py:376} INFO - Running <TaskInstance: first_dag.sum_task manual__2022-12-05T19:13:23.830755+00:00 [running]> on host debdf09646d4
+[2022-12-05T19:13:25.199+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=sum_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-05T19:13:23.830755+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-05T19:13:23.830755+00:00
+[2022-12-05T19:13:25.201+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 193, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/airflow1t.py", line 53, in summa
+    f.write(raz)
+TypeError: write() argument must be str, not numpy.int64
+[2022-12-05T19:13:25.210+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=first_dag, task_id=sum_task, execution_date=20221205T191323, start_date=20221205T191325, end_date=20221205T191325
+[2022-12-05T19:13:25.223+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 1309 for task sum_task (write() argument must be str, not numpy.int64; 10634)
+[2022-12-05T19:13:25.266+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2022-12-05T19:13:25.302+0000] {taskinstance.py:2623} INFO - 0 downstream tasks scheduled from follow-on schedule check

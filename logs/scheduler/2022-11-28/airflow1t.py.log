@@ -1,0 +1,1212 @@
+[2022-11-28T18:56:43.529+0000] {processor.py:154} INFO - Started process (PID=1243) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T18:56:43.530+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T18:56:43.531+0000] {logging_mixin.py:137} INFO - [2022-11-28T18:56:43.530+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T18:56:43.551+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T18:56:43.565+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.039 seconds
+[2022-11-28T18:57:13.976+0000] {processor.py:154} INFO - Started process (PID=1300) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T18:57:13.977+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T18:57:13.977+0000] {logging_mixin.py:137} INFO - [2022-11-28T18:57:13.977+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T18:57:13.988+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T18:57:14.001+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.028 seconds
+[2022-11-28T18:57:44.876+0000] {processor.py:154} INFO - Started process (PID=1364) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T18:57:44.877+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T18:57:44.878+0000] {logging_mixin.py:137} INFO - [2022-11-28T18:57:44.878+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T18:57:44.894+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T18:57:44.906+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.033 seconds
+[2022-11-28T18:57:54.969+0000] {processor.py:154} INFO - Started process (PID=1374) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T18:57:54.970+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T18:57:54.971+0000] {logging_mixin.py:137} INFO - [2022-11-28T18:57:54.971+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T18:57:54.983+0000] {logging_mixin.py:137} INFO - [2022-11-28T18:57:54.982+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 23
+    _operator import PythonOperator
+                   ^
+SyntaxError: invalid syntax
+[2022-11-28T18:57:54.984+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T18:57:55.061+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.095 seconds
+[2022-11-28T18:58:21.918+0000] {processor.py:154} INFO - Started process (PID=1429) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T18:58:21.919+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T18:58:21.920+0000] {logging_mixin.py:137} INFO - [2022-11-28T18:58:21.920+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T18:58:21.941+0000] {logging_mixin.py:137} INFO - [2022-11-28T18:58:21.939+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T18:58:21.942+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T18:58:21.964+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.049 seconds
+[2022-11-28T18:58:52.762+0000] {processor.py:154} INFO - Started process (PID=1493) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T18:58:52.763+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T18:58:52.764+0000] {logging_mixin.py:137} INFO - [2022-11-28T18:58:52.763+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T18:58:52.778+0000] {logging_mixin.py:137} INFO - [2022-11-28T18:58:52.776+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T18:58:52.779+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T18:58:52.809+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.050 seconds
+[2022-11-28T18:59:22.919+0000] {processor.py:154} INFO - Started process (PID=1559) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T18:59:22.920+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T18:59:22.920+0000] {logging_mixin.py:137} INFO - [2022-11-28T18:59:22.920+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T18:59:22.937+0000] {logging_mixin.py:137} INFO - [2022-11-28T18:59:22.935+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T18:59:22.938+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T18:59:22.957+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.041 seconds
+[2022-11-28T18:59:53.376+0000] {processor.py:154} INFO - Started process (PID=1614) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T18:59:53.377+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T18:59:53.377+0000] {logging_mixin.py:137} INFO - [2022-11-28T18:59:53.377+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T18:59:53.396+0000] {logging_mixin.py:137} INFO - [2022-11-28T18:59:53.393+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T18:59:53.397+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T18:59:53.417+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.044 seconds
+[2022-11-28T19:00:23.669+0000] {processor.py:154} INFO - Started process (PID=1679) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:00:23.670+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:00:23.670+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:00:23.670+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:00:23.685+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:00:23.683+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:00:23.686+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:00:23.712+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.046 seconds
+[2022-11-28T19:00:54.097+0000] {processor.py:154} INFO - Started process (PID=1744) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:00:54.098+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:00:54.099+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:00:54.099+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:00:54.119+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:00:54.116+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:00:54.120+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:00:54.144+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.051 seconds
+[2022-11-28T19:01:24.384+0000] {processor.py:154} INFO - Started process (PID=1799) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:01:24.385+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:01:24.386+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:01:24.385+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:01:24.410+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:01:24.406+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:01:24.412+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:01:24.436+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.056 seconds
+[2022-11-28T19:01:54.877+0000] {processor.py:154} INFO - Started process (PID=1863) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:01:54.878+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:01:54.879+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:01:54.879+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:01:54.894+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:01:54.892+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:01:54.895+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:01:54.923+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.049 seconds
+[2022-11-28T19:02:25.102+0000] {processor.py:154} INFO - Started process (PID=1926) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:02:25.103+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:02:25.103+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:02:25.103+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:02:25.117+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:02:25.115+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:02:25.118+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:02:25.136+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.038 seconds
+[2022-11-28T19:02:55.849+0000] {processor.py:154} INFO - Started process (PID=1983) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:02:55.851+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:02:55.851+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:02:55.851+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:02:55.864+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:02:55.862+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:02:55.865+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:02:55.886+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.040 seconds
+[2022-11-28T19:03:26.817+0000] {processor.py:154} INFO - Started process (PID=2048) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:03:26.818+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:03:26.819+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:03:26.819+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:03:26.834+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:03:26.831+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:03:26.835+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:03:26.859+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.044 seconds
+[2022-11-28T19:03:57.136+0000] {processor.py:154} INFO - Started process (PID=2112) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:03:57.137+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:03:57.138+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:03:57.138+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:03:57.154+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:03:57.152+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:03:57.155+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:03:57.176+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.043 seconds
+[2022-11-28T19:04:27.944+0000] {processor.py:154} INFO - Started process (PID=2167) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:04:27.945+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:04:27.945+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:04:27.945+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:04:27.963+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:04:27.961+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:04:27.965+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:04:27.985+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.044 seconds
+[2022-11-28T19:04:58.809+0000] {processor.py:154} INFO - Started process (PID=2231) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:04:58.810+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:04:58.811+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:04:58.811+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:04:58.838+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:04:58.832+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:04:58.840+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:04:58.876+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.071 seconds
+[2022-11-28T19:05:07.839+0000] {processor.py:154} INFO - Started process (PID=2265) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:05:07.840+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:05:07.841+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:05:07.841+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:05:07.872+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:05:07.868+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 2, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:05:07.874+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:05:07.901+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.067 seconds
+[2022-11-28T19:05:19.053+0000] {processor.py:154} INFO - Started process (PID=2287) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:05:19.054+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:05:19.054+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:05:19.054+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:05:19.077+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:05:19.074+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:05:19.078+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:05:19.106+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.056 seconds
+[2022-11-28T19:05:49.232+0000] {processor.py:154} INFO - Started process (PID=2342) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:05:49.233+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:05:49.234+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:05:49.233+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:05:49.247+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:05:49.245+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:05:49.248+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:05:49.275+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.046 seconds
+[2022-11-28T19:06:19.574+0000] {processor.py:154} INFO - Started process (PID=2407) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:06:19.574+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:06:19.575+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:06:19.575+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:06:19.594+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:06:19.591+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:06:19.594+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:06:19.614+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.043 seconds
+[2022-11-28T19:06:49.883+0000] {processor.py:154} INFO - Started process (PID=2471) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:06:49.885+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:06:49.886+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:06:49.886+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:06:49.919+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:06:49.916+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:06:49.920+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:06:49.951+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.073 seconds
+[2022-11-28T19:07:20.141+0000] {processor.py:154} INFO - Started process (PID=2526) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:07:20.142+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:07:20.143+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:07:20.143+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:07:20.157+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:07:20.155+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:07:20.158+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:07:20.184+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.046 seconds
+[2022-11-28T19:07:50.332+0000] {processor.py:154} INFO - Started process (PID=2590) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:07:50.333+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:07:50.334+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:07:50.334+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:07:50.348+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:07:50.346+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:07:50.349+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:07:50.368+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.039 seconds
+[2022-11-28T19:08:20.623+0000] {processor.py:154} INFO - Started process (PID=2655) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:08:20.624+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:08:20.625+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:08:20.625+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:08:20.639+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:08:20.637+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:08:20.640+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:08:20.665+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.045 seconds
+[2022-11-28T19:08:50.717+0000] {processor.py:154} INFO - Started process (PID=2710) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:08:50.717+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:08:50.718+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:08:50.718+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:08:50.733+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:08:50.730+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:08:50.733+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:08:50.760+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.046 seconds
+[2022-11-28T19:09:21.503+0000] {processor.py:154} INFO - Started process (PID=2774) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:09:21.504+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:09:21.505+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:09:21.505+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:09:21.521+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:09:21.519+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:09:21.522+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:09:21.550+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.050 seconds
+[2022-11-28T19:09:51.848+0000] {processor.py:154} INFO - Started process (PID=2838) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:09:51.849+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:09:51.850+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:09:51.850+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:09:51.865+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:09:51.862+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:09:51.865+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:09:51.883+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.037 seconds
+[2022-11-28T19:10:22.387+0000] {processor.py:154} INFO - Started process (PID=2893) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:10:22.388+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:10:22.389+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:10:22.389+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:10:22.403+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:10:22.401+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:10:22.404+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:10:22.426+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.041 seconds
+[2022-11-28T19:10:52.456+0000] {processor.py:154} INFO - Started process (PID=2957) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:10:52.457+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:10:52.457+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:10:52.457+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:10:52.474+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:10:52.471+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:10:52.476+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:10:52.498+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.046 seconds
+[2022-11-28T19:11:23.165+0000] {processor.py:154} INFO - Started process (PID=3021) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:11:23.166+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:11:23.167+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:11:23.167+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:11:23.186+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:11:23.184+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:11:23.187+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:11:23.212+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.050 seconds
+[2022-11-28T19:11:53.878+0000] {processor.py:154} INFO - Started process (PID=3084) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:11:53.879+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:11:53.880+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:11:53.880+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:11:53.895+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:11:53.893+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:11:53.896+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:11:53.917+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.041 seconds
+[2022-11-28T19:12:24.728+0000] {processor.py:154} INFO - Started process (PID=3141) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:12:24.729+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:12:24.729+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:12:24.729+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:12:24.742+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:12:24.740+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:12:24.743+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:12:24.760+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.036 seconds
+[2022-11-28T19:12:55.396+0000] {processor.py:154} INFO - Started process (PID=3205) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:12:55.397+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:12:55.398+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:12:55.398+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:12:55.413+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:12:55.410+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:12:55.413+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:12:55.439+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.046 seconds
+[2022-11-28T19:13:26.294+0000] {processor.py:154} INFO - Started process (PID=3269) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:13:26.295+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:13:26.296+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:13:26.296+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:13:26.309+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:13:26.307+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:13:26.310+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:13:26.327+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.036 seconds
+[2022-11-28T19:13:57.008+0000] {processor.py:154} INFO - Started process (PID=3324) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:13:57.009+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:13:57.010+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:13:57.009+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:13:57.024+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:13:57.021+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:13:57.024+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:13:57.043+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.038 seconds
+[2022-11-28T19:14:27.849+0000] {processor.py:154} INFO - Started process (PID=3389) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:14:27.850+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:14:27.851+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:14:27.851+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:14:27.867+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:14:27.864+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:14:27.868+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:14:27.894+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.048 seconds
+[2022-11-28T19:14:58.373+0000] {processor.py:154} INFO - Started process (PID=3453) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:14:58.374+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:14:58.375+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:14:58.375+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:14:58.390+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:14:58.388+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:14:58.391+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:14:58.408+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.038 seconds
+[2022-11-28T19:15:28.668+0000] {processor.py:154} INFO - Started process (PID=3508) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:15:28.669+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:15:28.669+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:15:28.669+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:15:28.688+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:15:28.685+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:15:28.689+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:15:28.719+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.055 seconds
+[2022-11-28T19:15:59.000+0000] {processor.py:154} INFO - Started process (PID=3572) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:15:59.001+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:15:59.002+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:15:59.002+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:15:59.018+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:15:59.016+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:15:59.019+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:15:59.040+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.044 seconds
+[2022-11-28T19:16:29.367+0000] {processor.py:154} INFO - Started process (PID=3636) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:16:29.368+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:16:29.370+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:16:29.369+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:16:29.387+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:16:29.384+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:16:29.388+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:16:29.419+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.055 seconds
+[2022-11-28T19:16:59.689+0000] {processor.py:154} INFO - Started process (PID=3691) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:16:59.690+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:16:59.691+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:16:59.691+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:16:59.706+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:16:59.703+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:16:59.706+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:16:59.783+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.097 seconds
+[2022-11-28T19:17:30.108+0000] {processor.py:154} INFO - Started process (PID=3755) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:17:30.109+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:17:30.111+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:17:30.110+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:17:30.128+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:17:30.124+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:17:30.129+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:17:30.160+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.057 seconds
+[2022-11-28T19:18:01.104+0000] {processor.py:154} INFO - Started process (PID=3819) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:18:01.105+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:18:01.106+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:18:01.106+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:18:01.120+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:18:01.118+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:18:01.121+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:18:01.139+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.039 seconds
+[2022-11-28T19:18:31.677+0000] {processor.py:154} INFO - Started process (PID=3883) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:18:31.678+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:18:31.678+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:18:31.678+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:18:31.694+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:18:31.691+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:18:31.695+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:18:31.716+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.043 seconds
+[2022-11-28T19:19:01.906+0000] {processor.py:154} INFO - Started process (PID=3938) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:19:01.907+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:19:01.908+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:19:01.908+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:19:01.926+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:19:01.923+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:19:01.927+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:19:01.956+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.053 seconds
+[2022-11-28T19:19:32.348+0000] {processor.py:154} INFO - Started process (PID=4002) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:19:32.348+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:19:32.349+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:19:32.349+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:19:32.364+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:19:32.361+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:19:32.364+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:19:32.389+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.044 seconds
+[2022-11-28T19:20:02.732+0000] {processor.py:154} INFO - Started process (PID=4067) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:20:02.733+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:20:02.733+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:20:02.733+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:20:02.746+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:20:02.744+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:20:02.747+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:20:02.766+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.037 seconds
+[2022-11-28T19:20:33.144+0000] {processor.py:154} INFO - Started process (PID=4122) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:20:33.145+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:20:33.145+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:20:33.145+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:20:33.168+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:20:33.163+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:20:33.169+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:20:33.197+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.056 seconds
+[2022-11-28T19:21:04.113+0000] {processor.py:154} INFO - Started process (PID=4186) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:21:04.114+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:21:04.115+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:21:04.115+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:21:04.129+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:21:04.127+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:21:04.130+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:21:04.148+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.038 seconds
+[2022-11-28T19:21:34.977+0000] {processor.py:154} INFO - Started process (PID=4251) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:21:34.978+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:21:34.979+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:21:34.978+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:21:34.995+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:21:34.991+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:21:34.996+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:21:35.028+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.054 seconds
+[2022-11-28T19:22:05.879+0000] {processor.py:154} INFO - Started process (PID=4306) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:22:05.880+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:22:05.881+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:22:05.880+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:22:05.899+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:22:05.897+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:22:05.900+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:22:05.930+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.058 seconds
+[2022-11-28T19:22:36.286+0000] {processor.py:154} INFO - Started process (PID=4370) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:22:36.286+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:22:36.287+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:22:36.287+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:22:36.304+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:22:36.302+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:22:36.306+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:22:36.328+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.046 seconds
+[2022-11-28T19:23:06.820+0000] {processor.py:154} INFO - Started process (PID=4434) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:23:06.821+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:23:06.822+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:23:06.822+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:23:06.837+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:23:06.834+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:23:06.838+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:23:06.860+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.043 seconds
+[2022-11-28T19:23:37.113+0000] {processor.py:154} INFO - Started process (PID=4489) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:23:37.114+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:23:37.114+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:23:37.114+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:23:37.130+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:23:37.128+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:23:37.131+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:23:37.156+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.046 seconds
+[2022-11-28T19:24:07.649+0000] {processor.py:154} INFO - Started process (PID=4553) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:24:07.650+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:24:07.652+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:24:07.651+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:24:07.668+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:24:07.665+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:24:07.669+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:24:07.698+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.052 seconds
+[2022-11-28T19:24:38.173+0000] {processor.py:154} INFO - Started process (PID=4617) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:24:38.174+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:24:38.175+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:24:38.174+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:24:38.193+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:24:38.191+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:24:38.194+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:24:38.218+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.049 seconds
+[2022-11-28T19:25:08.798+0000] {processor.py:154} INFO - Started process (PID=4672) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:25:08.799+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T19:25:08.800+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:25:08.800+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:25:08.814+0000] {logging_mixin.py:137} INFO - [2022-11-28T19:25:08.812+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 6, in <module>
+    from commons.datasources import sql_server_ds
+ModuleNotFoundError: No module named 'commons'
+[2022-11-28T19:25:08.815+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T19:25:08.835+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.040 seconds
+[2022-11-28T20:05:43.809+0000] {processor.py:154} INFO - Started process (PID=37) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:05:43.812+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:05:43.813+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:05:43.813+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:05:43.842+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:05:43.838+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 3, in <module>
+    from airflow.operators.bash import BashOpeartor
+ImportError: cannot import name 'BashOpeartor' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2022-11-28T20:05:43.843+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:05:43.868+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.064 seconds
+[2022-11-28T20:06:14.492+0000] {processor.py:154} INFO - Started process (PID=102) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:06:14.493+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:06:14.494+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:06:14.494+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:06:14.507+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:06:14.505+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 3, in <module>
+    from airflow.operators.bash import BashOpeartor
+ImportError: cannot import name 'BashOpeartor' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2022-11-28T20:06:14.508+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:06:14.527+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.038 seconds
+[2022-11-28T20:06:44.553+0000] {processor.py:154} INFO - Started process (PID=158) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:06:44.554+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:06:44.554+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:06:44.554+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:06:44.568+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:06:44.565+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 3, in <module>
+    from airflow.operators.bash import BashOpeartor
+ImportError: cannot import name 'BashOpeartor' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2022-11-28T20:06:44.569+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:06:44.603+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.053 seconds
+[2022-11-28T20:07:09.076+0000] {processor.py:154} INFO - Started process (PID=213) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:07:09.077+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:07:09.078+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:07:09.078+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:07:09.112+0000] {processor.py:766} INFO - DAG(s) dict_keys(['first_dag']) retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:07:09.288+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:07:09.288+0000] {manager.py:507} INFO - Created Permission View: can read on DAG:first_dag
+[2022-11-28T20:07:09.299+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:07:09.299+0000] {manager.py:507} INFO - Created Permission View: can edit on DAG:first_dag
+[2022-11-28T20:07:09.309+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:07:09.309+0000] {manager.py:507} INFO - Created Permission View: can delete on DAG:first_dag
+[2022-11-28T20:07:09.310+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:07:09.309+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-28T20:07:09.325+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:07:09.325+0000] {dag.py:2606} INFO - Creating ORM DAG for first_dag
+[2022-11-28T20:07:09.339+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:07:09.339+0000] {dag.py:3340} INFO - Setting next_dagrun for first_dag to 2022-01-01T00:00:00+00:00, run_after=2022-01-02T00:00:00+00:00
+[2022-11-28T20:07:09.365+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.291 seconds
+[2022-11-28T20:07:39.824+0000] {processor.py:154} INFO - Started process (PID=277) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:07:39.826+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:07:39.829+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:07:39.828+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:07:39.864+0000] {processor.py:766} INFO - DAG(s) dict_keys(['first_dag']) retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:07:39.949+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:07:39.949+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-28T20:07:39.974+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:07:39.974+0000] {dag.py:3340} INFO - Setting next_dagrun for first_dag to 2022-01-01T00:00:00+00:00, run_after=2022-01-02T00:00:00+00:00
+[2022-11-28T20:07:39.998+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.179 seconds
+[2022-11-28T20:08:38.815+0000] {processor.py:154} INFO - Started process (PID=37) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:08:38.817+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:08:38.818+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:08:38.817+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:08:38.854+0000] {processor.py:766} INFO - DAG(s) dict_keys(['first_dag']) retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:08:38.954+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:08:38.954+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-28T20:08:38.993+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:08:38.993+0000] {dag.py:3340} INFO - Setting next_dagrun for first_dag to 2022-01-01T00:00:00+00:00, run_after=2022-01-02T00:00:00+00:00
+[2022-11-28T20:08:39.028+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.218 seconds
+[2022-11-28T20:09:09.797+0000] {processor.py:154} INFO - Started process (PID=101) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:09:09.799+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:09:09.800+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:09:09.799+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:09:09.824+0000] {processor.py:766} INFO - DAG(s) dict_keys(['first_dag']) retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:09:09.860+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:09:09.860+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-28T20:09:09.886+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:09:09.886+0000] {dag.py:3340} INFO - Setting next_dagrun for first_dag to 2022-01-01T00:00:00+00:00, run_after=2022-01-02T00:00:00+00:00
+[2022-11-28T20:09:09.907+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.114 seconds
+[2022-11-28T20:09:40.602+0000] {processor.py:154} INFO - Started process (PID=192) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:09:40.603+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:09:40.604+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:09:40.604+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:09:40.631+0000] {processor.py:766} INFO - DAG(s) dict_keys(['first_dag']) retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:09:40.668+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:09:40.668+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-28T20:09:40.696+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:09:40.696+0000] {dag.py:3340} INFO - Setting next_dagrun for first_dag to 2022-01-12T00:00:00+00:00, run_after=2022-01-13T00:00:00+00:00
+[2022-11-28T20:09:40.720+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.122 seconds
+[2022-11-28T20:10:11.663+0000] {processor.py:154} INFO - Started process (PID=349) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:10:11.664+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:10:11.665+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:10:11.665+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:10:11.713+0000] {processor.py:766} INFO - DAG(s) dict_keys(['first_dag']) retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:10:11.774+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:10:11.774+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-28T20:10:11.821+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:10:11.821+0000] {dag.py:3340} INFO - Setting next_dagrun for first_dag to 2022-03-01T00:00:00+00:00, run_after=2022-03-02T00:00:00+00:00
+[2022-11-28T20:10:11.855+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.196 seconds
+[2022-11-28T20:10:42.417+0000] {processor.py:154} INFO - Started process (PID=487) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:10:42.418+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:10:42.419+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:10:42.419+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:10:42.441+0000] {processor.py:766} INFO - DAG(s) dict_keys(['first_dag']) retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:10:42.481+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:10:42.481+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-28T20:10:42.508+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:10:42.507+0000] {dag.py:3340} INFO - Setting next_dagrun for first_dag to 2022-04-11T00:00:00+00:00, run_after=2022-04-12T00:00:00+00:00
+[2022-11-28T20:10:42.532+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.119 seconds
+[2022-11-28T20:11:12.989+0000] {processor.py:154} INFO - Started process (PID=640) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:11:12.990+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:11:12.991+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:11:12.991+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:11:13.019+0000] {processor.py:766} INFO - DAG(s) dict_keys(['first_dag']) retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:11:13.058+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:11:13.058+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-28T20:11:13.091+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:11:13.091+0000] {dag.py:3340} INFO - Setting next_dagrun for first_dag to 2022-05-25T00:00:00+00:00, run_after=2022-05-26T00:00:00+00:00
+[2022-11-28T20:11:13.117+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.131 seconds
+[2022-11-28T20:11:43.895+0000] {processor.py:154} INFO - Started process (PID=789) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:11:43.896+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:11:43.897+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:11:43.896+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:11:43.918+0000] {processor.py:766} INFO - DAG(s) dict_keys(['first_dag']) retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:11:43.956+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:11:43.956+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-28T20:11:43.985+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:11:43.984+0000] {dag.py:3340} INFO - Setting next_dagrun for first_dag to 2022-07-05T00:00:00+00:00, run_after=2022-07-06T00:00:00+00:00
+[2022-11-28T20:11:44.007+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.116 seconds
+[2022-11-28T20:12:14.889+0000] {processor.py:154} INFO - Started process (PID=926) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:12:14.890+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:12:14.891+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:12:14.890+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:12:14.913+0000] {processor.py:766} INFO - DAG(s) dict_keys(['first_dag']) retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:12:14.954+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:12:14.954+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-28T20:12:14.982+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:12:14.982+0000] {dag.py:3340} INFO - Setting next_dagrun for first_dag to 2022-08-15T00:00:00+00:00, run_after=2022-08-16T00:00:00+00:00
+[2022-11-28T20:12:15.006+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.120 seconds
+[2022-11-28T20:12:45.791+0000] {processor.py:154} INFO - Started process (PID=1086) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:12:45.792+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:12:45.793+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:12:45.793+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:12:45.818+0000] {processor.py:766} INFO - DAG(s) dict_keys(['first_dag']) retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:12:45.860+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:12:45.860+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-28T20:12:45.889+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:12:45.889+0000] {dag.py:3340} INFO - Setting next_dagrun for first_dag to 2022-09-29T00:00:00+00:00, run_after=2022-09-30T00:00:00+00:00
+[2022-11-28T20:12:45.915+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.127 seconds
+[2022-11-28T20:13:16.474+0000] {processor.py:154} INFO - Started process (PID=1243) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:13:16.475+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:13:16.476+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:13:16.476+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:13:16.500+0000] {processor.py:766} INFO - DAG(s) dict_keys(['first_dag']) retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:13:16.561+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:13:16.561+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-28T20:13:16.592+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:13:16.592+0000] {dag.py:3340} INFO - Setting next_dagrun for first_dag to 2022-11-11T00:00:00+00:00, run_after=2022-11-12T00:00:00+00:00
+[2022-11-28T20:13:16.616+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.147 seconds
+[2022-11-28T20:13:46.781+0000] {processor.py:154} INFO - Started process (PID=1332) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:13:46.782+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:13:46.783+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:13:46.782+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:13:46.804+0000] {processor.py:766} INFO - DAG(s) dict_keys(['first_dag']) retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:13:46.843+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:13:46.843+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-28T20:13:46.870+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:13:46.870+0000] {dag.py:3340} INFO - Setting next_dagrun for first_dag to 2022-11-28T00:00:00+00:00, run_after=2022-11-29T00:00:00+00:00
+[2022-11-28T20:13:46.896+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.118 seconds
+[2022-11-28T20:14:06.354+0000] {processor.py:154} INFO - Started process (PID=1387) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:14:06.355+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:14:06.355+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:14:06.355+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:14:06.576+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:14:06.572+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 14, in <module>
+    results = pd.read_csv('Data.csv')
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/base_parser.py", line 229, in _open_handles
+    errors=kwds.get("encoding_errors", "strict"),
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/common.py", line 707, in get_handle
+    newline="",
+FileNotFoundError: [Errno 2] No such file or directory: 'Data.csv'
+[2022-11-28T20:14:06.577+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:14:06.602+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.252 seconds
+[2022-11-28T20:14:37.520+0000] {processor.py:154} INFO - Started process (PID=1452) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:14:37.521+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:14:37.522+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:14:37.522+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:14:37.838+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:14:37.833+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 14, in <module>
+    results = pd.read_csv('Data.csv')
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/base_parser.py", line 229, in _open_handles
+    errors=kwds.get("encoding_errors", "strict"),
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/common.py", line 707, in get_handle
+    newline="",
+FileNotFoundError: [Errno 2] No such file or directory: 'Data.csv'
+[2022-11-28T20:14:37.838+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:14:37.861+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.344 seconds
+[2022-11-28T20:15:08.495+0000] {processor.py:154} INFO - Started process (PID=1509) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:15:08.496+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:15:08.497+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:15:08.497+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:15:08.771+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:15:08.768+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 14, in <module>
+    results = pd.read_csv('Data.csv')
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/base_parser.py", line 229, in _open_handles
+    errors=kwds.get("encoding_errors", "strict"),
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/common.py", line 707, in get_handle
+    newline="",
+FileNotFoundError: [Errno 2] No such file or directory: 'Data.csv'
+[2022-11-28T20:15:08.772+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:15:08.792+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.301 seconds
+[2022-11-28T20:15:39.297+0000] {processor.py:154} INFO - Started process (PID=1574) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:15:39.299+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:15:39.300+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:15:39.299+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:15:39.593+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:15:39.589+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 14, in <module>
+    results = pd.read_csv('Data.csv')
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/base_parser.py", line 229, in _open_handles
+    errors=kwds.get("encoding_errors", "strict"),
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/common.py", line 707, in get_handle
+    newline="",
+FileNotFoundError: [Errno 2] No such file or directory: 'Data.csv'
+[2022-11-28T20:15:39.594+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:15:39.614+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.319 seconds
+[2022-11-28T20:16:10.361+0000] {processor.py:154} INFO - Started process (PID=1639) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:16:10.362+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:16:10.362+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:16:10.362+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:16:10.373+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:16:10.372+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 14
+    results = pd.read_csv('C:\Users\admin\PycharmProjects\pythonProject1\adre')
+                         ^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+[2022-11-28T20:16:10.373+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:16:10.394+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.037 seconds
+[2022-11-28T20:16:31.522+0000] {processor.py:154} INFO - Started process (PID=1694) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:16:31.523+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:16:31.524+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:16:31.523+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:16:31.534+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:16:31.534+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 14
+    results = pd.read_csv('C:\Users\admin\PycharmProjects\pythonProject1\addresses.csv')
+                         ^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+[2022-11-28T20:16:31.535+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:16:31.556+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.039 seconds
+[2022-11-28T20:17:01.791+0000] {processor.py:154} INFO - Started process (PID=1749) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:17:01.792+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:17:01.793+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:17:01.793+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:17:01.802+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:17:01.802+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 14
+    results = pd.read_csv('C:\Users\admin\PycharmProjects\pythonProject1\addresses.csv')
+                         ^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+[2022-11-28T20:17:01.803+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:17:01.821+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.033 seconds
+[2022-11-28T20:17:32.036+0000] {processor.py:154} INFO - Started process (PID=1814) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:17:32.037+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:17:32.038+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:17:32.038+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:17:32.047+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:17:32.046+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 14
+    results = pd.read_csv('C:\Users\admin\PycharmProjects\pythonProject1\addresses.csv')
+                         ^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+[2022-11-28T20:17:32.047+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:17:32.067+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.033 seconds
+[2022-11-28T20:18:02.404+0000] {processor.py:154} INFO - Started process (PID=1878) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:18:02.405+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:18:02.406+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:18:02.406+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:18:02.416+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:18:02.415+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 14
+    results = pd.read_csv('C:\Users\admin\PycharmProjects\pythonProject1\addresses.csv')
+                         ^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+[2022-11-28T20:18:02.416+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:18:02.434+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.033 seconds
+[2022-11-28T20:18:32.590+0000] {processor.py:154} INFO - Started process (PID=1940) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:18:32.591+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:18:32.591+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:18:32.591+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:18:32.603+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:18:32.602+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 14
+    results = pd.read_csv('C:\Users\admin\PycharmProjects\pythonProject1\addresses.csv')
+                         ^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+[2022-11-28T20:18:32.604+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:18:32.626+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.039 seconds
+[2022-11-28T20:19:02.895+0000] {processor.py:154} INFO - Started process (PID=1995) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:19:02.896+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:19:02.897+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:19:02.897+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:19:02.909+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:19:02.908+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 14
+    results = pd.read_csv('C:\Users\admin\PycharmProjects\pythonProject1\addresses.csv')
+                         ^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+[2022-11-28T20:19:02.910+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:19:02.928+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.035 seconds
+[2022-11-28T20:19:33.676+0000] {processor.py:154} INFO - Started process (PID=2056) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:19:33.677+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:19:33.678+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:19:33.678+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:19:33.689+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:19:33.688+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 14
+    results = pd.read_csv('C:\Users\admin\PycharmProjects\pythonProject1\addresses.csv')
+                         ^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+[2022-11-28T20:19:33.690+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:19:33.714+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.042 seconds
+[2022-11-28T20:20:04.249+0000] {processor.py:154} INFO - Started process (PID=2120) to work on /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:20:04.250+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/airflow1t.py for tasks to queue
+[2022-11-28T20:20:04.251+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:20:04.251+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:20:04.261+0000] {logging_mixin.py:137} INFO - [2022-11-28T20:20:04.260+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/airflow1t.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow1t.py", line 14
+    results = pd.read_csv('C:\Users\admin\PycharmProjects\pythonProject1\addresses.csv')
+                         ^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+[2022-11-28T20:20:04.262+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow1t.py
+[2022-11-28T20:20:04.281+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/airflow1t.py took 0.036 seconds

@@ -1,0 +1,32 @@
+[2022-12-05T18:53:52.952+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: first_dag.sum_task manual__2022-12-05T18:53:51.673323+00:00 [queued]>
+[2022-12-05T18:53:52.967+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: first_dag.sum_task manual__2022-12-05T18:53:51.673323+00:00 [queued]>
+[2022-12-05T18:53:52.968+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-05T18:53:52.968+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-05T18:53:52.969+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-05T18:53:52.990+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): sum_task> on 2022-12-05 18:53:51.673323+00:00
+[2022-12-05T18:53:52.997+0000] {standard_task_runner.py:55} INFO - Started process 9518 to run task
+[2022-12-05T18:53:53.001+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'sum_task', 'manual__2022-12-05T18:53:51.673323+00:00', '--job-id', '1246', '--raw', '--subdir', 'DAGS_FOLDER/***1t.py', '--cfg-path', '/tmp/tmpq2qo_i82']
+[2022-12-05T18:53:53.004+0000] {standard_task_runner.py:83} INFO - Job 1246: Subtask sum_task
+[2022-12-05T18:53:53.100+0000] {task_command.py:376} INFO - Running <TaskInstance: first_dag.sum_task manual__2022-12-05T18:53:51.673323+00:00 [running]> on host debdf09646d4
+[2022-12-05T18:53:53.205+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=sum_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-05T18:53:51.673323+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-05T18:53:51.673323+00:00
+[2022-12-05T18:53:53.207+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 193, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/airflow1t.py", line 48, in summa
+    result1, result2 = [int(x) for x in next(f).split()]
+ValueError: too many values to unpack (expected 2)
+[2022-12-05T18:53:53.218+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=first_dag, task_id=sum_task, execution_date=20221205T185351, start_date=20221205T185352, end_date=20221205T185353
+[2022-12-05T18:53:53.236+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 1246 for task sum_task (too many values to unpack (expected 2); 9518)
+[2022-12-05T18:53:53.253+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2022-12-05T18:53:53.276+0000] {taskinstance.py:2623} INFO - 0 downstream tasks scheduled from follow-on schedule check
